@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bh0fmruhhg3d8"]
+
+[ext_resource type="Texture2D" uid="uid://b446pxrhmkowo" path="res://asset/towers.png" id="1_fb08o"]
+[ext_resource type="PackedScene" uid="uid://hgppo68a0wox" path="res://scene/component/building_resource_component.tscn" id="2_fu5fo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fu5fo"]
+atlas = ExtResource("1_fb08o")
+region = Rect2(49, 3, 24, 29)
+
+[node name="House" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_fu5fo")
+
+[node name="BuildingResourceComponent" parent="." instance=ExtResource("2_fu5fo")]
+resourceAmount = Vector2i(5, 10)

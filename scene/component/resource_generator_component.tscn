@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpyxtu05i3txn"]
+
+[ext_resource type="Script" uid="uid://ddj3jcpx6acy2" path="res://scene/component/resource_generator_component.gd" id="1_0yp6n"]
+
+[node name="ResourceGeneratorComponent" type="Node2D"]
+script = ExtResource("1_0yp6n")
