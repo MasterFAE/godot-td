@@ -1,0 +1,82 @@
+[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://cit7rkpxlcmvn"]
+
+[ext_resource type="Texture2D" uid="uid://dkp6ik7qw4tcu" path="res://asset/pack2/AllAssetsPreview.png" id="1_dlt2r"]
+[ext_resource type="PackedScene" uid="uid://ddkq8bnjy33lm" path="res://scene/building/extralarge_house.tscn" id="2_mpttm"]
+[ext_resource type="PackedScene" uid="uid://bh0fmruhhg3d8" path="res://scene/building/large_house.tscn" id="3_edmuk"]
+[ext_resource type="PackedScene" uid="uid://d3wvidqlb2xv7" path="res://scene/building/small_house.tscn" id="4_0d14n"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ckhkc"]
+texture = ExtResource("1_dlt2r")
+10:15/0 = 0
+9:15/0 = 0
+9:16/0 = 0
+10:16/0 = 0
+10:17/0 = 0
+11:17/0 = 0
+11:17/0/terrain_set = 0
+11:17/0/terrain = 0
+11:17/0/terrains_peering_bit/right_side = 0
+11:17/0/terrains_peering_bit/bottom_right_corner = 0
+11:17/0/terrains_peering_bit/bottom_side = 0
+11:17/0/terrains_peering_bit/bottom_left_corner = 0
+11:17/0/terrains_peering_bit/left_side = 0
+11:17/0/terrains_peering_bit/top_left_corner = 0
+11:17/0/terrains_peering_bit/top_side = 0
+11:17/0/terrains_peering_bit/top_right_corner = 0
+11:16/0 = 0
+11:15/0 = 0
+11:15/0/terrain_set = 0
+11:15/0/terrain = 1
+11:15/0/terrains_peering_bit/right_side = 1
+11:15/0/terrains_peering_bit/bottom_right_corner = 1
+11:15/0/terrains_peering_bit/bottom_side = 1
+11:15/0/terrains_peering_bit/bottom_left_corner = 1
+11:15/0/terrains_peering_bit/left_side = 1
+11:15/0/terrains_peering_bit/top_left_corner = 1
+11:15/0/terrains_peering_bit/top_side = 1
+11:15/0/terrains_peering_bit/top_right_corner = 1
+9:17/0 = 0
+5:14/0 = 0
+4:14/0 = 0
+3:14/0 = 0
+2:14/0 = 0
+1:14/0 = 0
+0:13/0 = 0
+0:12/0 = 0
+0:11/0 = 0
+1:11/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+5:12/0 = 0
+5:13/0 = 0
+4:13/0 = 0
+0:14/0 = 0
+1:13/0 = 0
+2:13/0 = 0
+3:13/0 = 0
+0:0/size_in_atlas = Vector2i(2, 2)
+0:0/0 = 0
+4:2/size_in_atlas = Vector2i(2, 2)
+4:2/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_2gbvt"]
+resource_name = "Building"
+scenes/1/scene = ExtResource("2_mpttm")
+scenes/2/scene = ExtResource("3_edmuk")
+scenes/3/scene = ExtResource("4_0d14n")
+
+[resource]
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Water"
+terrain_set_0/terrain_0/color = Color(0.69061416, 2.7915835e-06, 0.42729938, 1)
+terrain_set_0/terrain_1/name = "Grass"
+terrain_set_0/terrain_1/color = Color(0.13889962, 0.3543977, 1, 1)
+sources/1 = SubResource("TileSetAtlasSource_ckhkc")
+sources/2 = SubResource("TileSetScenesCollectionSource_2gbvt")
